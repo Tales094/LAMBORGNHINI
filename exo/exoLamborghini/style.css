@@ -1,6 +1,6 @@
 
 body{
-   
+   background-color: rgba(0, 0, 0, 0.932);
 }
 
 /* 1er page du site */
@@ -161,10 +161,10 @@ h4{                     /*Taille et Style du titre Footer */
     color: white;
 
 }
-
+/* Grid pour le Footer */
 .footer-grid{     
-    border-top: 1px solid red;            /*Grid pour le Footer*/
-   padding: 20px;
+    border-top: 1px solid red;            
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(5,200px);
     grid-template-rows: repeat(2,250px);
@@ -179,7 +179,9 @@ h4{                     /*Taille et Style du titre Footer */
     .gallery {
         grid-template-columns: repeat(3,1fr);
     }
-    
+    /* .footer-grid{
+        border-top: 1px solid red;
+    } */
 }
 
 @media screen and (max-width:1280px){
@@ -196,6 +198,7 @@ h4{                     /*Taille et Style du titre Footer */
         flex-wrap: wrap;
         gap: 2px;
         text-align: center;
+        border-top: 1px solid red;
        
     }
     h4{
@@ -240,6 +243,8 @@ h4{                     /*Taille et Style du titre Footer */
         text-align: center;
         flex-wrap: wrap;
         gap: 1px;
+        border-top: 1px solid red;
+        /* border-top: none; */
     }
     h4{
         border-top: 1px solid red;
