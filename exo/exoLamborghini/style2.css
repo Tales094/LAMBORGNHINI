@@ -1,0 +1,24 @@
+grid-template-columns: repeat(auto-fit, minmax(000px, 0fr); /*pour le responsive sa sadapte*/
+
+.grid-footer{
+
+}
+.h{
+    text-transform: uppercase; /*metre le texte en majuscule*/
+}
+
+/* menu deroulant(dropdown menu*/
+.dropdown-menu{
+    display: none;
+    text-decoration: none;
+    /* visibility: hidden; */
+}
+/* dropdown-bouton */
+.dropdown-menu{
+    display: block;
+}
+.dropdown-bouton:hover, ~ .dropdown-menu{
+    display: block;
+}
+
+
