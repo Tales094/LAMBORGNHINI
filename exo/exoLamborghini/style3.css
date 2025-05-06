@@ -3,14 +3,14 @@ body{
     background-color: rgba(0, 0, 0, 0.932);
  }
  
- /* menu deroulant(dropdown menu*/ */
+ /* menu deroulant(dropdown menu*/ 
 
- .dropdown-menu{
+ /* .dropdown-menu{
      display: none;
      text-decoration: none;
      visibility: hidden;
     
- } 
+ }  */
 
 /* 
  .dropdown-menu{
@@ -25,12 +25,12 @@ body{
     /* background-color: aliceblue; */
  }
  .dropdown-bouton::after{
-    content: ">>";
+    /* content: ">>"; */
     /* padding-left: var(--space-rnyrt-element); */
     
  }
 
- .dropdown-bouton:hover, ~ .dropdown-menu{
+ /* .dropdown-bouton:hover, ~ .dropdown-menu{
      display: block;
      position: absolute;
      right: 30px;
@@ -39,7 +39,7 @@ body{
  }
 .content-link{
     position: relative;
-}
+} */
  
  /* 1er page du site */
  .intro-background{         /*Image uracan*/
