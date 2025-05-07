@@ -1,25 +1,51 @@
 
+@font-face {
+    font-family: 'ChonkyBunny.ttf';
+    font-style: italic;
+    font-weight: 100 900;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v47/KFO5CnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmkC3kaWzU.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+
 body{
     background-color: rgba(0, 0, 0, 0.932);
+    font-family: "Roboto", sans-serif;
  }
- 
+ /* menu burguer */
+ .logo-mobile {
+    display: none;
+ }
+ #mobile {
+    display: none;
+ }
+#mobile:checked ~ .menu {
+    display: flex;
+}
+
+
  /* menu deroulant(dropdown menu*/ 
 
- /* .dropdown-menu{
+ .dropdown-menu{
      display: none;
-     text-decoration: none;
-     visibility: hidden;
-    
- }  */
-
+     list-style: none;  
+     padding: 20px;  
+     padding-right: 90px;
+     text-align: center;
+     border: 1px solid red;
+     border-radius: 25px;
+     font-size: 15px;
+ } 
 /* 
+
  .dropdown-menu{
     display: block;
     position: absolute;
     top: 30px;
     left: 0; 
 
- }*/
+ } */
 
  .dropdown-bouton{
     /* background-color: aliceblue; */
@@ -30,16 +56,17 @@ body{
     
  }
 
- /* .dropdown-bouton:hover, ~ .dropdown-menu{
+ .dropdown-bouton:hover > .dropdown-menu{
      display: block;
      position: absolute;
      right: 30px;
      left: 0;
-     background-color: gray;
- }
+     background-color: rgba(10, 0, 0, 0.692);
+     z-index: 310;
+ } 
 .content-link{
     position: relative;
-} */
+} 
  
  /* 1er page du site */
  .intro-background{         /*Image uracan*/
@@ -246,6 +273,16 @@ body{
  }
  
  @media screen and (max-width:992px){
+    .menu {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+    .logo-desktop {
+        display: none;
+    }
+
     .entete{
      flex-direction: column;
      align-items: center;
